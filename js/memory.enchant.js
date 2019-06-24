@@ -41,7 +41,7 @@
      * namespace object
      * @type {Object}
      */
-    enchant.nineleap.memory = { assets: ['indicator.png'] };
+    enchant.nineleap.memory = { assets: ['../lastweek/img/indicator.png'] };
 
     /**
      * ゲームメモリーリクエストが成功した時に発生するイベント.
@@ -141,7 +141,7 @@
             };
             this.addEventListener('load', function() {
                 this.ajaxloading = new SplashScene();
-                this.ajaxloading.image = this.assets['indicator.png'];
+                this.ajaxloading.image = this.assets['../lastweek/img/indicator.png'];
                 var core = this;
                 this.ajaxloading.childNodes[0].addEventListener('enterframe', function() {
                     if (core.frame % 5 == 0) this.rotate(16);
